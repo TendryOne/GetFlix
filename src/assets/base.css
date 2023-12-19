@@ -1,0 +1,83 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red */
+  
+}
+fieldset
+{
+  color: black;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.281);
+  margin: 10px 0;
+}
+
+body {
+
+  font-family: 'Mark Pro', sans-serif;
+
+}
+.button-primary
+{
+  position: absolute;
+  display: block;
+  z-index: 2;
+  /* overflow: hidden; */
+  position: relative;
+  border: 1px solid black;
+  cursor: pointer; 
+  color: white; 
+
+}
+
+.button-primary::before
+{
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background-color: black;
+  height: 100%;
+  width: 0;
+  transition: 0.2s;
+
+}
+.button-primary:hover::before
+{
+  width: 100%;
+
+}
+.button-primary:hover
+{
+  color: white;
+}
+.button-success
+{
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  background-color:#10ac84 ;
+  margin-left: 10px ;
+  border-radius: 10px;
+ 
+}
+.button-fail
+{
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  background-color:#ee5253 ;
+  border-radius: 10px;
+  margin-left: 10px ;
+}
+.button-secondary 
+{
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  background-color:#aaa69d ;
+  border-radius: 10px;
+  margin-left: 10px ;
+}
